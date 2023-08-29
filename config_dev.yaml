@@ -1,0 +1,26 @@
+
+# 工作路径
+work_param:
+  swagger_ui: True
+  # 以图搜图时，上传文件保存目录
+  upload_path: "data/uploadfile/"
+  # 上传文件大小限制，最大1M
+  upload_size: 1024
+  # 需要提取特征的图像文件所在目录,注意最后加上"\\"
+  src_path: "data/input/"
+  # 完成特征提取后的图像文件存放目录
+  dst_path: "data/output/"
+  # 批量文件特征提取线程数
+  thread_num: 2
+  # True工作于测试模式， False工作于生产模式
+  test_mode: True
+
+# 日志参数
+log_param:
+  log_out_type: all
+  log_path:  "logs"
+  log_file_name: info
+  log_level: DEBUG
+  log_max_file_num: 30
+  # 单位为M
+  log_max_file_size: 10
